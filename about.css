@@ -1,0 +1,200 @@
+*{
+    margin: 0px;
+}
+
+.h1{
+
+    font-family: 'Hiragino Sans';
+}
+
+ul.title{
+    display: inline-block;
+    margin-top: 0px;
+    padding-left: 150px;
+    padding-top: 0px;
+    list-style: none;
+    font-family: 'Hiragino Sans';
+    font-style: initial;
+    white-space: inherit;
+}
+
+#home_title{
+    margin: 0;
+    color: black;
+    font-style: unset;
+    font-size: 25px;
+    padding-top:0%; 
+    background-color: transparent;
+    margin: 0px;
+    border: transparent;
+    cursor: pointer;
+
+}
+
+
+
+ul { /* 取消ul預設的內縮及樣式 */
+    display: inline-block;
+    margin: 0;
+    padding-left: 400px;
+    list-style: none;
+    font-family: 'Hiragino Sans';
+    font-style: initial;
+
+}
+
+ul.drop-down-menu {
+    border: transparent;
+    display: inline-block;
+}
+
+ul.drop-down-menu li {
+    position: sticky;
+    white-space: inherit;
+    border-right: transparent;
+}
+
+ul.drop-down-menu > li {
+    float: left; /* 只有第一層是靠左對齊*/
+}
+
+ ul.drop-down-menu a {
+    background-color: #fff;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+    line-height: 40px;
+
+}
+ul.drop-down-menu a:hover { /* 滑鼠滑入按鈕變色*/
+    color:darkgreen;
+}
+
+#search{
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+}
+ul.drop-down-menu img:hover{
+    color: darkgreen;
+}
+#english{
+    color:gray;
+}
+#english:hover{
+    color:black;
+}
+
+
+/**********************************/
+.nav_img{
+    background-image: url(./image/main.jpg); 
+    width: 100%;
+    height: 250px;
+
+
+}
+
+#title{
+    font-family: 'Courier New', Courier, monospace;
+    position:absolute;
+    color:white; 
+    font-weight:800; 
+    font-size:60px; 
+    top:15%;
+    left:22%;
+    z-index:1000;
+
+}
+#button1{
+    font-family: 'Courier New', Courier, monospace;
+    display : inline-block;
+    position:absolute;
+    z-index: 1000;
+    left: 43%;
+    top:30%;
+    font-size: 15px;
+    color: white;
+    background-color: darkgreen;
+    border: transparent solid ;
+    height: 60px;
+    width: 200px;
+    cursor: pointer;
+}
+#button1:hover{
+    background-color:  #103800;
+}
+
+#bg{
+    background-image: url(./image/about/eesa.png); 
+    width: 100%;
+    height: 800px;
+    opacity: 0.2;
+    z-index: 1000;
+    margin-left: 50px;
+    background-attachment: fixed
+}
+
+#master{
+    margin:0;
+    width:320px;
+    height:320px;
+    opacity: 1;
+    position: absolute;
+    top: 550px;
+    left: 330px;
+    z-index: 500;
+}
+#p_master{
+    margin:0;
+    width:320px;
+    height:320px;
+    opacity: 1;
+    position: absolute;
+    top: 550px;
+    left: 750px;
+    z-index: 500;
+}
+#master_title{
+    font-family: 'Courier New', Courier, monospace;
+    display : inline-block;
+    color:black;
+    position: absolute;
+    top:900px;
+    left:410px;
+    z-index: 1000;
+    font-size: 30px;
+
+}
+#p_master_title{
+    font-family: 'Courier New', Courier, monospace;
+    display : inline-block;
+    color:black;
+    position: absolute;
+    top:900px;
+    left:810px;
+    z-index: 1000;
+    font-size: 30px;
+}
+
+#about{
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top:1200px;
+    left:600px;
+    font-size: 40px;
+    background:transparent;
+}
+
+#about_con{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    position: absolute;
+    top:1300px;
+    left: 250px;
+    right: 250px;;
+    border:transparent;
+}
+

@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+}
+
+.h1{
+   
+    font-family: 'Hiragino Sans';
+}
+
+ul.title{
+    display: inline-block;
+    margin-top: 0px;
+    padding-left: 150px;
+    padding-top: 0px;
+    list-style: none;
+    font-family: 'Hiragino Sans';
+    font-style: initial;
+    position: sticky;
+    white-space: inherit;
+}
+
+#home_title{
+    margin: 0;
+    color: black;
+    font-style: unset;
+    font-size: 25px;
+    padding-top:0%; 
+    background-color: transparent;
+    margin: 0px;
+    border: transparent;
+    cursor: pointer;
+}
+
+
+
+ul { /* 取消ul預設的內縮及樣式 */
+    display: inline-block;
+    margin: 0;
+    padding-left: 400px;
+    list-style: none;
+    font-family: 'Hiragino Sans';
+    font-style: initial;
+}
+
+ul.drop-down-menu {
+    border: transparent;
+    display: inline-block;
+}
+
+ul.drop-down-menu li {
+    position: sticky;
+    white-space: inherit;
+    border-right: transparent;
+}
+
+ul.drop-down-menu > li {
+    float: left; /* 只有第一層是靠左對齊*/
+}
+
+ ul.drop-down-menu a {
+    background-color: #fff;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+    line-height: 40px;
+
+}
+ul.drop-down-menu a:hover { /* 滑鼠滑入按鈕變色*/
+    color:darkgreen;
+}
+
+#search{
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+}
+ul.drop-down-menu img:hover{
+    color: darkgreen;
+}
+#english{
+    color:gray;
+}
+#english:hover{
+    color:black;
+}
