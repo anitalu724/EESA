@@ -8,28 +8,29 @@
     <link rel="stylesheet" type="text/css" href = "index.css">
 </head>
 <body>
-    <h1 class="h1">
-            <ul class="title">
-                    <li><a id ="home_title" href="file:///Users/anitalu/Desktop/EESA_WEB/eesa_web/index.html">NTU X EESA</a></li>
-            </ul>
-            <ul class="drop-down-menu">
-                    <li><a href="file:///Users/anitalu/Desktop/EESA_WEB/eesa_web/contact.html">CONTACT US</a></li>
-                    <li><a href="file:///Users/anitalu/Desktop/EESA_WEB/eesa_web/about.html">ABOUT</a></li>
-                    <li><a href="file:///Users/anitalu/Desktop/EESA_WEB/eesa_web/schedule.html">SCHEDULE</a></li>
-                    <li><a href="file:///Users/anitalu/Desktop/EESA_WEB/eesa_web/division.html">DIVISION</a></li>
-                    <li><a href="file:///Users/anitalu/Desktop/EESA_WEB/eesa_web/sports.html">SPORTS</a></li>
-                    <li><a href="file:///Users/anitalu/Desktop/EESA_WEB/eesa_web/activities.html">ACTIVITIES</a></li>
-                    <li><a><img id= "search" src="./image/search.png"></a></li>
-                    <li><a id="english" hover="./image/search.png">English</a></li>
-            </ul>
-    </h1>
+    <header class="nav_row">
+        <nav>
+            <div class="nav_left">
+                <a id="home_title" href="./index.html"><span>NTU X EESA</span></a>
+            </div>
+            <div class=nav_right>
+                <ul class="drop-down-menu">
+                    <li><a href="./contact.html">CONTACT US</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./schedule.html">SCHEDULE</a></li>
+                    <li><a href="./division.html">DIVISION</a></li>
+                    <li><a href="./sports.html">SPORTS</a></li>
+                    <li><a href="./activities.html">ACTIVITIES</a></li>
+                    <li id="search"><a><img src="./image/home/search.png"></a></li>
+                    <li id="english"><a hover="./image/home/search.png">English</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <div id = "bg_img">
         <span id = "title">國立台灣大學電機工程學系學會</span>
-        <button id = "button1" onclick="location.href='file:///Users/anitalu/Desktop/EESA_WEB/eesa_web/contact.html'">聯絡我們</button>
+        <button id = "button1" onclick="location.href='./contact.html'">聯絡我們</button>
         <button id = "button2" onclick="location.href='https://web.ee.ntu.edu.tw'">台大電機系官網</button>
     </div>
-    
-    
-    
 </body>
 </html>
