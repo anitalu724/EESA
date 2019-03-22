@@ -12,7 +12,6 @@ body {
 .nav_row{
     font-family: 'Noto Sans', sans-serif;
     font-weight: bold;
-
     position: sticky;
     white-space: inherit;
     height: 60px;
@@ -136,7 +135,7 @@ https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
 
 #title{
     position:absolute;
-    color:rgb(230, 163, 163); 
+    color:white;
     font-weight:800; 
     font-size:60px; 
     top:40%;
