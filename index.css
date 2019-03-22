@@ -135,7 +135,7 @@ https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
 }
 
 #title{
-    font-family: 'Courier New', Courier, monospace;
+    
     position:absolute;
     color:white; 
     font-weight:800; 
@@ -156,7 +156,7 @@ https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
 }
 
 #button1{
-    font-family: 'Courier New', Courier, monospace;
+    
     z-index: 1000;
     background-color: transparent;
     font-size: 20px;
@@ -172,7 +172,7 @@ https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
     color: black;
 }
 #button2{
-    font-family: 'Courier New', Courier, monospace;
+    
     margin-left: auto;
     z-index: 1000;
     font-size: 20px;
