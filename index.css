@@ -2,94 +2,126 @@
     margin: 0px;
 }
 
+<<<<<<< HEAD
 body {
     height:100vh;
 }
 
-.h1{
-   
-    font-family: 'Hiragino Sans';
-}
-
-ul.title {
-    display: inline-block;
-    margin-top: 0px;
-    padding-left: 150px;
-    padding-top: 0px;
-    list-style: none;
-    font-family: 'Hiragino Sans';
-    font-style: initial;
+=======
+.nav_row{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+>>>>>>> origin/yth98
     position: sticky;
     white-space: inherit;
+    height: 60px;
+    line-height: 60px;
+    display: flow-root; /* prevent from .nav_left collapsing */
+}
+.nav_row div {
+    height: 60px;
+}
+@supports not (display:flow-root) { /* https://www.w3cplus.com/css3/display-flow-root.html */
+    .nav_row::after { content: ''; display: table; clear:both; }
 }
 
+#nav_left{
+    float: left;
+    padding-left: 100px;
+}
 #home_title{
-    margin: 0;
-    color: black;
-    font-style: unset;
+    color: #25a2b2;
     font-size: 25px;
-    padding-top:0%; 
-    background-color: transparent;
-    margin: 0px;
-    border: transparent;
-    cursor: pointer;
-}
-
-
-
-ul { /* 取消ul預設的內縮及樣式 */
-    display: inline-block;
-    margin: 0;
-    padding-left: 400px;
-    list-style: none;
-    font-family: 'Hiragino Sans';
-    font-style: initial;
-}
-
-ul.drop-down-menu {
-    border: transparent;
-    display: inline-block;
-}
-
-ul.drop-down-menu li {
-    position: sticky;
-    white-space: inherit;
-    border-right: transparent;
-}
-
-ul.drop-down-menu > li {
-    float: left; /* 只有第一層是靠左對齊*/
-}
-
- ul.drop-down-menu a {
-    background-color: #fff;
-    font-size: 12px;
-    color: rgb(0, 0, 0);
-    display: block;
-    padding: 0 10px;
     text-decoration: none;
-    line-height: 40px;
-
 }
-ul.drop-down-menu a:hover { /* 滑鼠滑入按鈕變色*/
+
+#nav_right{
+    float: right;
+    padding-right: 100px;
+}
+ul { /* 取消ul預設的樣式 */
+    list-style: none;
+    padding-left: 0;
+}
+ul > li {
+    float: left; /* 只有第一層是靠左對齊 */
+}
+ul a {
+    background-color: #fff;
+    color: #000;
+    font-size: 12px;
+    text-decoration: none;
+    height: 60px;
+    padding: 0 10px;
+    display: block;
+}
+ul a:hover { /* 滑鼠滑入按鈕變色 */
     color:darkgreen;
 }
-
-#search{
-    padding: 10px;
+#search img {
     width: 20px;
     height: 20px;
+    padding: 20px;
+    transition: 0.2s; /* 滑鼠滑入按鈕變大動畫 */
 }
-ul.drop-down-menu img:hover{
-    color: darkgreen;
+#search img:hover {
+    width: 24px;
+    height: 24px;
+    padding: 18px;
 }
-#english{
+#english a {
     color:gray;
 }
-#english:hover{
+#english a:hover {
     color:black;
 }
 
+#nav_mobile {
+    float: right;
+    position: relative;
+    font-size: 32px;
+    text-align: center;
+    width: 60px;
+    cursor: pointer;
+    display: none;
+}
+#nav_mobile:hover {
+    background-color: #4bc;
+    transition: 0.2s;
+}
+
+@media all and (max-width: 1000px) {
+    #nav_left {
+        padding-left: 40px;
+    }
+    #nav_mobile {
+        display: inherit;
+    }
+    #nav_right {
+        width: 100%;
+        padding-right: 0;
+        display: none;
+    }
+    .menu-opened {
+        display: inherit !important;
+    }
+    ul > li {
+        float: none;
+    }
+    ul a {
+        background-color: #f0f0f0;
+        font-size: 16px;
+    }
+    ul a:hover {
+        background-color: #ccc;
+        color:darkgreen;
+        transition: 0.2s;
+    }
+}
+/***
+drop-down-menu involves javascript events:
+https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+***/
 
 
 /**********************************************/
@@ -108,9 +140,15 @@ ul.drop-down-menu img:hover{
     font-weight:800; 
     font-size:60px; 
     top:40%;
+<<<<<<< HEAD
     /*left: 22%;*/
     width:100%;
     text-align: center;
+=======
+    text-align: center;
+    margin: auto;
+    width: 100%;
+>>>>>>> origin/yth98
     z-index:1000;
 }
 
