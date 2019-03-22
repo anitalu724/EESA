@@ -6,14 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>國立台灣大學電機工程學系學會 - NTU X EESA</title>
     <link rel="stylesheet" type="text/css" href = "index.css">
+    <script>
+        function toggleDrop() {
+            var x = document.getElementById("nav_right");
+            if (x.className === "")
+                x.className = "menu-opened";
+            else
+                x.className = "";
+        }
+    </script>
 </head>
 <body>
     <header class="nav_row">
         <nav>
-            <div class="nav_left">
-                <a id="home_title" href="./index.html"><span>NTU X EESA</span></a>
+            <div id="nav_left">
+                <a id="home_title" href="./index.html">NTU X EESA</a>
             </div>
-            <div class=nav_right>
+            <div id="nav_mobile" onclick="toggleDrop()">
+                🦖
+            </div>
+            <div id="nav_right">
                 <ul class="drop-down-menu">
                     <li><a href="./contact.html">CONTACT US</a></li>
                     <li><a href="./about.html">ABOUT</a></li>

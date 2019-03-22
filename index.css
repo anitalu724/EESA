@@ -12,13 +12,13 @@
     display: flow-root; /* prevent from .nav_left collapsing */
 }
 .nav_row div {
-    display: inline-block;
+    height: 60px;
 }
 @supports not (display:flow-root) { /* https://www.w3cplus.com/css3/display-flow-root.html */
     .nav_row::after { content: ''; display: table; clear:both; }
 }
 
-.nav_left{
+#nav_left{
     float: left;
     padding-left: 100px;
 }
@@ -28,12 +28,13 @@
     text-decoration: none;
 }
 
-.nav_right{
+#nav_right{
     float: right;
     padding-right: 100px;
 }
 ul { /* 取消ul預設的樣式 */
     list-style: none;
+    padding-left: 0;
 }
 ul > li {
     float: left; /* 只有第一層是靠左對齊 */
@@ -43,23 +44,23 @@ ul a {
     color: #000;
     font-size: 12px;
     text-decoration: none;
-    display: block;
-    padding: 0 10px;
     height: 60px;
+    padding: 0 10px;
+    display: block;
 }
 ul a:hover { /* 滑鼠滑入按鈕變色 */
     color:darkgreen;
 }
 #search img {
-    padding: 20px;
     width: 20px;
     height: 20px;
+    padding: 20px;
     transition: 0.2s; /* 滑鼠滑入按鈕變大動畫 */
 }
 #search img:hover {
-    padding: 18px;
     width: 24px;
     height: 24px;
+    padding: 18px;
 }
 #english a {
     color:gray;
@@ -67,8 +68,50 @@ ul a:hover { /* 滑鼠滑入按鈕變色 */
 #english a:hover {
     color:black;
 }
+
+#nav_mobile {
+    float: right;
+    position: relative;
+    font-size: 32px;
+    text-align: center;
+    width: 60px;
+    cursor: pointer;
+    display: none;
+}
+#nav_mobile:hover {
+    background-color: #4bc;
+    transition: 0.2s;
+}
+
+@media all and (max-width: 1000px) {
+    #nav_left {
+        padding-left: 40px;
+    }
+    #nav_mobile {
+        display: inherit;
+    }
+    #nav_right {
+        width: 100%;
+        padding-right: 0;
+        display: none;
+    }
+    .menu-opened {
+        display: inherit !important;
+    }
+    ul > li {
+        float: none;
+    }
+    ul a {
+        background-color: #f0f0f0;
+        font-size: 16px;
+    }
+    ul a:hover {
+        background-color: #ccc;
+        color:darkgreen;
+        transition: 0.2s;
+    }
+}
 /***
-TODO: 自適應網站設計 (RWD)
 drop-down-menu involves javascript events:
 https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
 ***/
