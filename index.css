@@ -135,16 +135,13 @@ https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
 }
 
 #title{
-    
     position:absolute;
-    color:white; 
+    color:rgb(230, 163, 163); 
     font-weight:800; 
     font-size:60px; 
     top:40%;
-    /*left: 22%;*/
     width:100%;
     text-align: center;
-
     z-index:1000;
 }
 
@@ -156,7 +153,6 @@ https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
 }
 
 #button1{
-    
     z-index: 1000;
     background-color: transparent;
     font-size: 20px;
@@ -172,7 +168,6 @@ https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
     color: black;
 }
 #button2{
-    
     margin-left: auto;
     z-index: 1000;
     font-size: 20px;
