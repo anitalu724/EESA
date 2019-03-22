@@ -2,16 +2,16 @@
     margin: 0px;
 }
 
-<<<<<<< HEAD
+
 body {
     height:100vh;
 }
 
-=======
+
 .nav_row{
     font-family: 'Noto Sans', sans-serif;
     font-weight: bold;
->>>>>>> origin/yth98
+
     position: sticky;
     white-space: inherit;
     height: 60px;
@@ -140,12 +140,10 @@ https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
     font-weight:800; 
     font-size:60px; 
     top:40%;
-<<<<<<< HEAD
     /*left: 22%;*/
     width:100%;
     text-align: center;
-=======
->>>>>>> origin/yth98
+
     z-index:1000;
 }
 
