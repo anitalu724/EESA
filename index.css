@@ -134,27 +134,25 @@ https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
 }
 
 #title{
-    position:absolute;
     color:white;
     font-weight:800; 
     font-size:60px; 
-    top:40%;
     width:100%;
     text-align: center;
     z-index:1000;
 }
 
-#button-container {
+#outer-container {
     position: absolute;
     width: 100%;
-    top: 60%;
+    top: 40%;
 }
 
 #inner-container{
     display: flex;
     flex-direction: row;
     width: 35%;
-    margin: 0 auto;
+    margin: 2em auto;
 }
 
 #button1{
